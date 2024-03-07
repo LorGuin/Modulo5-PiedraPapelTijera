@@ -1,0 +1,27 @@
+.init-instrucciones {
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.init-instrucciones__titulo {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.init-instrucciones__button{
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.init-instrucciones__hands{
+    margin-top: 45%;
+}
