@@ -21,6 +21,4 @@ export function initGanaste(params) {
     params.goTo("/instrucciones");
   });
   return div;
-
-  return div;
 }

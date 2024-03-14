@@ -24,9 +24,10 @@ export function initPelea(params) {
 
   const currentState = state.getState();
   const jugadaJugador = jugada;
+  // @ts-ignore: Unused variable
   const jugadaPc = state.computerPlay();
 
-  if (jugadaJugador == "tijeras") {
+  if (jugadaJugador === "tijeras") {
     state.setMove("tijeras");
     div.innerHTML = `
         <div class="init-pelea">
@@ -40,7 +41,7 @@ export function initPelea(params) {
               <img src="${imgTijera}" class="init-pelea__img" />
           </div>
         </div>  `;
-  } else if (jugadaJugador == "papel") {
+  } else if (jugadaJugador === "papel") {
     state.setMove("papel");
     div.innerHTML = `
         <div class="init-pelea">
@@ -54,7 +55,7 @@ export function initPelea(params) {
                 <img src="${imgPapel}" class="init-pelea__img"/>
             </div>
         </div>`;
-  } else if (jugadaJugador == "piedra") {
+  } else if (jugadaJugador === "piedra") {
     state.setMove("piedra");
     div.innerHTML = `
         <div class="init-pelea">
@@ -70,7 +71,7 @@ export function initPelea(params) {
         </div>
         `;
   }
-
+  // @ts-ignore: Unused variable
   const ganador = state.whoWins(
     currentState.currentGame.myPlay,
     currentState.currentGame.computerPlay
@@ -78,6 +79,7 @@ export function initPelea(params) {
 
   const resultado = currentState.currentGame.resultado;
   state.countPoints(resultado);
+  // @ts-ignore: Unused variable
   const history = state.getHistory();
 
   setTimeout(() => {

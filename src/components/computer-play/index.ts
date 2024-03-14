@@ -1,5 +1,5 @@
 import { state } from "../../state";
-
+// @ts-ignore: Unused variable
 type Jugada = "piedra" | "papel" | "tijeras";
 
 const imgPapel = new URL("../images/Papel.png", import.meta.url) as any;

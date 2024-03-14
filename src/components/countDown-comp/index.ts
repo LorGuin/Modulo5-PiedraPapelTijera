@@ -38,8 +38,7 @@ customElements.define(
                 </svg>
 
       `;
-
-      const timerSvg = div.querySelector(".timer__svg");
+      // @ts-ignore: Unused variable
 
       let count = 5;
       const countDownInterval = setInterval(() => {
@@ -48,6 +47,7 @@ customElements.define(
           clearInterval(countDownInterval);
         } else {
           const text: any = div.querySelector(".timer__number");
+          // @ts-ignore: Unused variable
           let result = (text.textContent = count.toString());
         }
       }, 1000);
